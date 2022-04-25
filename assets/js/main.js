@@ -1,5 +1,6 @@
 
-import Dom from './constructor.js'; //selecionar elementos
+import Dom from './modules/constructors.js'; //selecionar elementos
+import scriptsHome from './modules/scriptsPaginas/home.js'
 
 
 // PAGES 
