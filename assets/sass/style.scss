@@ -1,0 +1,11 @@
+@import "../sass/cores";
+@import "../sass/fontes";
+
+//UTILIDADES
+@import "../sass/utilities/reset";
+@import "../sass/utilities/responsivo";
+
+
+.body__home {
+    @import "./pages/page_home";
+} 
