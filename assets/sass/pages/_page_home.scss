@@ -1,6 +1,14 @@
+
 .intro-bg{
     background-color: $cor-c11;
 }
+
+.introducao-bg{
+    background-color: $cor-c11;
+    box-shadow: inset 0 -80px #ffffff;
+}
+
+
 
 #header{
     .header{
@@ -25,13 +33,14 @@
     }
 }
 
+
+
 #introducao{
     .introducao{
         display: flex;
-        
 
         .introducao-informacao{
-            margin-top: 100px;
+            margin-top: 190px;
             max-width: 800px;
             span{
                 color: $cor-primary;
@@ -63,6 +72,8 @@
 
         }
 
-       
+       .introducao-imagem{
+        margin-top: 100px;
+       }
     }
 }
