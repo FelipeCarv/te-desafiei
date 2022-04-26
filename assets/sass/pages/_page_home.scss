@@ -184,3 +184,71 @@
         }
     }
 }
+
+#aulas{
+    .aulas{
+        margin-top: 160px;
+
+        .chamada-aulas{
+            text-align: center;
+           
+
+            p{
+                margin-bottom: 20px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+                letter-spacing: -0.02em;
+                color: $cor-c8;
+                position: relative;
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    background: url('/assets/img/img-aulas/details.svg');
+                    background-repeat: no-repeat;
+                    width: 47px;
+                    height: 5px;
+                    top: 20px;
+                    right: 530px;
+                }
+                
+                   
+            }
+
+            h1{
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 61px;
+                letter-spacing: -0.02em;
+                color: $cor-primary;
+                margin-bottom: 80px;
+            }
+        }
+
+        .aulas-imagens{
+            display: flex;
+            gap: 30px;
+            position: relative;
+            z-index: 1;
+
+            &::before{
+                content: '';
+                position: absolute;
+                background: url('/assets/img/img-aulas/detail-background.svg');
+                background-repeat: no-repeat;
+                width: 1900px;
+                height: 312px;
+                top: 330px;
+                left: -350px; 
+                z-index: -1;
+            }
+        }
+
+        .img-swapper-aulas{
+            display: flex;
+            justify-content: center;
+            margin: 40px auto;
+        }
+    }
+}
