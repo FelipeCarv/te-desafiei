@@ -5,10 +5,10 @@
 
 .introducao-bg{
     background-color: $cor-c11;
-    box-shadow: inset 0 -80px #ffffff;
+    box-shadow: inset 0 -80px #FCFCFC;
 }
 
-
+//============================= HEADER =============================
 
 #header{
     .header{
@@ -33,8 +33,7 @@
     }
 }
 
-
-
+//============================= INTRODUCAO =============================
 #introducao{
     .introducao{
         display: flex;
@@ -96,5 +95,92 @@
             z-index: -1;
         }
        }
+    }
+}
+
+
+//============================= BENEFICIOS =============================
+
+#beneficios{
+    margin-top: 80px;
+
+    .beneficios{
+        display: flex;
+        gap: 100px;
+        align-items: center;
+
+        .beneficios-chamada{
+            h1{
+                color: #070C17;
+                font-weight: 400;
+                font-size: 44px;
+                line-height: 61px;
+                letter-spacing: -0.02em;
+                position: relative;
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 64px;
+                    height: 64px;
+                    background: url('/assets/img/icons-beneficios/details-feito/traços.svg');
+                    background-repeat: no-repeat;
+                    right: -65px;
+                    top: 15px;
+                }
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 135px;
+                    height: 100px;
+                    background: url('/assets/img/icons-beneficios/details-feito/circle.svg');
+                    background-repeat: no-repeat;
+                    right: 67px;
+                    bottom: -25px;
+                }
+            }
+
+            p{
+                color: $cor-c8;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 23px;
+                letter-spacing: -0.02em;
+                margin-top: 25px;
+                margin-bottom: 30px;
+            }
+
+            .beneficios-icon{
+                width: 68px;
+                height: 10px;
+            }
+        }
+
+        .beneficios-informacoes{
+            display: flex;
+            gap: 30px;
+
+            .beneficios-info{
+                background-color: $cor-branco;
+                width: 380px;
+                box-shadow: 0px 8px 16px rgba(41, 40, 45, 0.04);
+                border-radius: 16px;
+
+                img{
+                    padding: 30px;
+                }
+
+                h3{
+                    padding: 0px 25px 0px 30px;
+
+                }
+
+                p{
+                    padding: 0px 25px 70px 30px;
+
+                }
+            }
+        }
     }
 }
