@@ -74,6 +74,27 @@
 
        .introducao-imagem{
         margin-top: 100px;
+        position: relative;
+        z-index: 3;
+            .imagem-fundo{
+                position: absolute;
+                top: 70px;
+                left: -140px;
+                width: 600px;
+                z-index: -1;
+            }
+
+        &::before{
+            content: '';
+            background-image: url('/assets/img/img-header/details-device-header.svg');
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 330px;
+            width: 100%;
+            height: 100%;
+            left: 285px;
+            z-index: -1;
+        }
        }
     }
 }
