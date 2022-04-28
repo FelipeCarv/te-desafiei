@@ -8,6 +8,10 @@
     box-shadow: inset 0 -80px #FCFCFC;
 }
 
+.depoimentos-bg{
+    background-color: $cor-c2;
+}
+
 //============================= HEADER =============================
 
 #header{
@@ -185,6 +189,8 @@
     }
 }
 
+//============================= AULAS =============================
+
 #aulas{
     .aulas{
         margin-top: 160px;
@@ -264,6 +270,7 @@
     }
 }
 
+//============================= PLANOS =============================
 
 #planos{
     .planos{
@@ -420,6 +427,133 @@
                     }
                 }
                
+            }
+        }
+    }
+}
+
+//============================= DEPOIMENTOS =============================
+
+#depoimentos{
+    .depoimentos{
+        padding-top: 80px;
+
+        .img-depoimentos{
+            padding-top: 40px;
+            padding-bottom: 80px;
+            display: block;
+            margin: 0 auto;
+        }
+        .depoimentos-chamada{
+            text-align: center;
+
+            p{
+                margin-bottom: 20px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+                letter-spacing: -0.02em;
+                color: $cor-c8;
+            }
+
+            h1{
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 61px;
+                letter-spacing: -0.02em;
+                color: $cor-primary;
+                margin-bottom: 80px;
+                
+            }
+        }
+
+        .depoimentos-wrapper{
+            display: flex;
+            position: relative;
+            justify-content: center;
+            .depoimento{
+                display: flex;
+                background: #070C17;
+                border-radius: 16px;
+                color: $cor-branco;
+
+                .depoimento-cliente{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin: 64px 130px 0px 64px;
+                    
+                    .stars{
+                        max-width: 90px;
+                    }
+
+                   .cliente{
+                        display: flex;
+                        gap: 20px;
+                        margin-top: 240px;
+                        margin-bottom: 64px;
+                        width: 240px;
+                        align-items: center;
+                        position: relative;
+                        
+
+                        .nome-cliente{
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 20px;
+                            letter-spacing: -0.02em;
+                        }
+
+                        .profissao-cliente{
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            letter-spacing: -0.02em;
+                        }
+
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            background: url('/assets/img/img-depoimentos/detailsbg-depoimento.svg');
+                            background-repeat: no-repeat;
+                            width: 930px;
+                            height: 312px;
+                            top: -170px;
+                            left: -55px;
+                           
+                        }
+                   }
+                }
+
+                .depoimento-informacao{
+                    background: #19202F;
+                    border-radius: 8px;
+                    margin: 20px;
+                    z-index: 2;
+
+                    p{
+                        margin: 64px 64px 107px 64px;
+                        max-width: 390px;
+                        text-align: justify;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 25px;
+                        letter-spacing: -0.02em;
+                    }
+                    
+                    a{
+                        text-align: center;
+                        padding: 20px 30px;
+                        border-radius: 27px;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 20px;
+                        background: $cor-primary;
+                        color: #070C17;
+                        margin-left: 64px;
+                    }
+    
+                }
             }
         }
     }
