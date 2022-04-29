@@ -44,6 +44,7 @@
 //============================= INTRODUCAO =============================
 #introducao{
     .introducao{
+        position: relative;
         display: flex;
 
         .introducao-informacao{
@@ -103,6 +104,17 @@
             z-index: -1;
         }
        }
+
+       &::before{
+            content: '';
+            background-image: url('/assets/img/img-header/details-header.svg');
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 206px;
+            left: -210px;
+            bottom: -1px;
+        }
     }
 }
 
@@ -196,6 +208,8 @@
 //============================= AULAS =============================
 
 #aulas{
+    position: relative;
+
     .aulas{
         margin-top: 160px;
         position: relative;
@@ -272,12 +286,16 @@
         }
        
     }
+
+  
 }
 
 //============================= PLANOS =============================
 
 #planos{
     .planos{
+
+        position: relative;
         .chamada-planos{
             text-align: center;
 
@@ -433,7 +451,20 @@
                
             }
         }
+
+        &::after{
+            content: '';
+            background-image: url('/assets/img/img-header/details-header.svg');
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 206px;
+            left: 1290px;
+            top: -180px;
+        }
     }
+
+   
 }
 
 //============================= DEPOIMENTOS =============================
@@ -567,6 +598,8 @@
 
 #baixe{
     .baixe{
+        position: relative;
+
         .chamada-baixe{
             text-align: center;
 
@@ -606,7 +639,19 @@
             gap: 34px;
             justify-content: center;
         }
+
+        &::before{
+            content: '';
+            background-image: url('/assets/img/img-header/details-header.svg');
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 206px;
+            left: -210px;
+            bottom: -180px; 
+        }
     }
+   
 }
 
 //============================= NEWSLETTER =============================
@@ -690,7 +735,7 @@
     }
 }
 
-//============================= NEWSLETTER =============================
+//============================= FOOTER =============================
 
 #footer{
     .footer{
