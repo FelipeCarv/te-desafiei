@@ -46,11 +46,11 @@ $ss-device: 330px; //small small
   }
   
   @else if $size==s {
-    @media screen and (max-width: $s-device-1) {
+    @media screen and (max-width: $s-device - 1) {
       @content;
     }
   } @else if $size==ss {
-    @media screen and (max-width: $ss-device-1) {
+    @media screen and (max-width: $ss-device - 1) {
       @content;
     }
   }

@@ -120,7 +120,6 @@
 
 
 //============================= BENEFICIOS =============================
-
 #beneficios{
     margin-top: 80px;
 
@@ -206,7 +205,6 @@
 }
 
 //============================= AULAS =============================
-
 #aulas{
     position: relative;
 
@@ -291,7 +289,6 @@
 }
 
 //============================= PLANOS =============================
-
 #planos{
     .planos{
 
@@ -422,6 +419,11 @@
             margin-top: 80px;
             margin-bottom: 80px;
             justify-content: center;
+            align-items: center;
+            @include d(s ){
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
 
             .dados{
                 background: #FFFFFF;
@@ -468,7 +470,6 @@
 }
 
 //============================= DEPOIMENTOS =============================
-
 #depoimentos{
     .depoimentos{
         padding-top: 80px;
@@ -595,7 +596,6 @@
 }
 
 //============================= BAIXE =============================
-
 #baixe{
     .baixe{
         position: relative;
@@ -655,7 +655,6 @@
 }
 
 //============================= NEWSLETTER =============================
-
 #newsletter{
     .newsletter{
         .chamada-newsletter{
@@ -736,7 +735,6 @@
 }
 
 //============================= FOOTER =============================
-
 #footer{
     .footer{
         color: $cor-branco;
