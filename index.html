@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.compilado.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
 
     <title>Te-Desafiei</title>
 </head>
@@ -67,55 +69,77 @@
                        eficiente junto à nossa equipe.
                     </p>
                     <div data-aos="fade-up" data-aos-delay="1000" class="beneficios-icon">
-                        <img src="/assets/img/icons-beneficios/beneficios-swapper.svg" alt="">
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
+                <div class="swiper mySwiper">
+                    <div data-aos="fade-left"  data-aos-delay="1000" class="beneficios-informacoes swiper-wrapper">
+                        <div class="beneficios-info swiper-slide">
+                            <img src="/assets/img/icons-beneficios/heart-benefic.svg" alt="">
+                            <h3>Condicionamento físico</h3>
+                            <p>Treinos que promovem o aperfeiçoamento físico, flexibilidade e resistência muscular.</p>
+                        </div>
+    
+                        <div class="beneficios-info swiper-slide">
+                            <img src="/assets/img/icons-beneficios/cintura.svg" alt="">
+                            <h3>Perda de peso</h3>
+                            <p>Queime até 500 kcal com a gente. Temos uma equipe especializada para te ajudar na sua queima calórica.</p>
+                        </div>
+    
+                        <div class="beneficios-info swiper-slide">
+                            <img src="/assets/img/icons-beneficios/altere.svg" alt="">
+                            <h3>Ganho de massa muscular</h3>
+                            <p>Te daremos todo o suporte para que o seu ganho de massa muscular ocorra de forma rápida e saudável.</p>
+                        </div>
 
-                <div data-aos="fade-left"  data-aos-delay="1000" class="beneficios-informacoes">
-                    <div class="beneficios-info">
-                        <img src="/assets/img/icons-beneficios/heart-benefic.svg" alt="">
-                        <h3>Condicionamento físico</h3>
-                        <p>Treinos que promovem o aperfeiçoamento físico, flexibilidade e resistência muscular.</p>
-                    </div>
-
-                    <div class="beneficios-info">
-                        <img src="/assets/img/icons-beneficios/cintura.svg" alt="">
-                        <h3>Perda de peso</h3>
-                        <p>Queime até 500 kcal com a gente. Temos uma equipe especializada para te ajudar na sua queima calórica.</p>
-                    </div>
-
-                    <div class="beneficios-info">
-                        <img src="/assets/img/icons-beneficios/altere.svg" alt="">
-                        <h3>Ganho de massa muscular</h3>
-                        <p>Te daremos todo o suporte para que o seu ganho de massa muscular ocorra de forma rápida e saudável.</p>
+                        <div class="beneficios-info swiper-slide">
+                            <img src="/assets/img/icons-beneficios/altere.svg" alt="">
+                            <h3>Ganho de massa muscular</h3>
+                            <p>Te daremos todo o suporte para que o seu ganho de massa muscular ocorra de forma rápida e saudável.</p>
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </section>
 
         <section id="aulas">
-            <div class="aulas container">
+            <div class="aulas container ">
                 <div class="chamada-aulas">
                     <p data-aos="fade-up" data-aos-delay="1000">Treine onde puder!</p>
                     <h1 data-aos="fade-up" data-aos-delay="1200">Aulas dinâmicas e acertivas para o seu objetivo</h1>
                 </div>
-                <div class="aulas-imagens">
-                    <div class="img-aula">
-                        <img src="/assets/img/img-aulas/Bem vindo-1-1.png" alt="">
-                    </div>
-                    <div class="img-aula">
-                        <img src="/assets/img/img-aulas/Bem vindo-1.png" alt="">
-                    </div>
-                    <div class="img-aula">
-                        <img src="/assets/img/img-aulas/Bem vindo-2.png" alt="">
-                    </div>
-                    <div class="img-aula">
-                        <img src="/assets/img/img-aulas/Bem vindo-3.png" alt="">
+
+                <div class="swiper mySwipper">
+                    <div class="aulas-imagens swiper-wrapper">
+                        <div class="img-aula swiper-slide">
+                            <img src="/assets/img/img-aulas/Bem vindo-1-1.png" alt="">
+                        </div>
+                        <div class="img-aula swiper-slide">
+                            <img src="/assets/img/img-aulas/Bem vindo-1.png" alt="">
+                        </div>
+                        <div class="img-aula swiper-slide">
+                            <img src="/assets/img/img-aulas/Bem vindo-2.png" alt="">
+                        </div>
+                        <div class="img-aula swiper-slide">
+                            <img src="/assets/img/img-aulas/Bem vindo-3.png" alt="">
+                        </div>
+                        <div class="img-aula swiper-slide">
+                            <img src="/assets/img/img-aulas/Bem vindo-1-1.png" alt="">
+                        </div>
+                        <div class="img-aula swiper-slide">
+                            <img src="/assets/img/img-aulas/Bem vindo-1.png" alt="">
+                        </div>
+                        <div class="img-aula swiper-slide">
+                            <img src="/assets/img/img-aulas/Bem vindo-2.png" alt="">
+                        </div>
+                        <div class="img-aula swiper-slide">
+                            <img src="/assets/img/img-aulas/Bem vindo-3.png" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="img-swapper-aulas">
-                    <img src="/assets/img/icons-beneficios/beneficios-swapper.svg" alt="">
-                </div>
+               
+                <div class="img-swapper-aulas swiper-pagination2"></div>
             </div>
         </section>
 
@@ -224,8 +248,8 @@
         <section id="baixe" class="depoimentos-bg">
             <div class="baixe container">
                 <div class="chamada-baixe">
-                    <p data-aos="fade-up" data-aos-delay="1000">Comece instantaneamente</p>
-                    <h1 data-aos="fade-up" data-aos-delay="1200">Baixe o Aplicativo</h1>
+                    <p>Comece instantaneamente</p>
+                    <h1>Baixe o Aplicativo</h1>
                 </div>
                 
                 <div class="baixe-botoes">
@@ -303,13 +327,31 @@
         </section>
     </main>
 
-    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
     <script type="module" src="./assets/js/main.js"></script>
 
     <script>
         AOS.init();
-      </script>
+    </script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    var swiper = new Swiper(".mySwipper", {
+      slidesPerView: "4",
+      pagination: {
+        el: ".swiper-pagination2",
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 </html>

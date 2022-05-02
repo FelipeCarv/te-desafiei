@@ -35,9 +35,26 @@
       }
     
       a{
+          position: relative;
           color: $cor-branco;
           font-weight: 400;
-      }
+
+          &::after{
+            content: " ";
+            display: block;
+            height: 1px;
+            width: 0%;
+            background-color: $cor-primary;
+            margin-top: 4px;
+            position: absolute;
+          }
+          &:hover::after{
+            width: 100%;
+            transition: 0.3s;
+        }
+       }
+
+       
     }
 }
 
@@ -144,8 +161,8 @@
                     height: 64px;
                     background: url('/assets/img/icons-beneficios/details-feito/traços.svg');
                     background-repeat: no-repeat;
-                    right: -65px;
-                    top: 15px;
+                    left: 300px;
+                    top: 25px;
                 }
 
                 &::after{
@@ -155,7 +172,7 @@
                     height: 100px;
                     background: url('/assets/img/icons-beneficios/details-feito/circle.svg');
                     background-repeat: no-repeat;
-                    right: 67px;
+                    right: 170px;
                     bottom: -25px;
                 }
             }
