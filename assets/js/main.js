@@ -15,3 +15,12 @@ if (pageHome) { // ★ HOME
 document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("dcl");
 });
+
+const btnMobile = document.getElementById('menu-hamburguer');
+
+    function toggleMenu(){
+        const nav = document.getElementById('nav');
+        nav.classList.toggle('active')
+    }
+
+    btnMobile.addEventListener('click', toggleMenu);

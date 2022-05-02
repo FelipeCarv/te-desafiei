@@ -22,14 +22,18 @@
                    <a href=""><img src="/assets/img/img-header/header-logo.svg" alt="logo da te desafiei"></a>
                </div>
 
-               <div class="header-menu">
+               <div id="nav" class="header-menu menu-mobile">
                    <ul id="menu">
-                       <li><a href="#beneficios">Funcionalidades</a></li>
-                       <li><a href="#depoimentos">Depoimentos</a></li>
-                       <li><a href="#planos">Planos</a></li>
-                       <li><a href="#baixe">Baixe o Aplicativo</a></li>
-                       <li><a href="#newsletter">Fique por dentro</a></li>
+                       <li class="menu-mobile-link"><a href="#beneficios">Funcionalidades</a></li>
+                       <li class="menu-mobile-link"><a href="#depoimentos">Depoimentos</a></li>
+                       <li class="menu-mobile-link"><a href="#planos">Planos</a></li>
+                       <li class="menu-mobile-link"><a href="#baixe">Baixe o Aplicativo</a></li>
+                       <li class="menu-mobile-link"><a href="#newsletter">Fique por dentro</a></li>
                    </ul>
+               </div>
+
+               <div id="menu-hamburguer">
+                   <img src="/assets/img/img-header/hamburger.png" alt="">
                </div>
             </div>
         </nav>
@@ -405,6 +409,7 @@
 
     var swiper = new Swiper(".mySwipper", {
       slidesPerView: "4",
+      spaceBetween: 5,
       pagination: {
         el: ".swiper-pagination2",
         clickable: true,

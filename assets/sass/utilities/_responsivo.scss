@@ -2,6 +2,7 @@
 $lll-device: 1921px; //large
 $ll-device: 1440px; //large
 $l-device: 1366px; //large
+$mx-device: 1200px; //large
 $mm-device: 992px; //mediums
 $m-device: 1024px; //mediums
 $t-device: 768px;
@@ -34,6 +35,12 @@ $ss-device: 330px; //small small
     }
   } @else if $size==t {
     @media screen and (max-width: $t-device ) {
+      //abaixo do medio
+      @content;
+    }
+  }
+  @else if $size==mx {
+    @media screen and (max-width: $mx-device) {
       //abaixo do medio
       @content;
     }
