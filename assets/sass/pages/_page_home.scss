@@ -208,8 +208,37 @@
         display: flex;
         gap: 100px;
         align-items: center;
+        @include d(m){
+            gap: 50px;
+        }
+        @include d(t){
+           display: block;
+        }
 
+       
         .beneficios-chamada{
+            @include d(t){
+                max-width: 425px;
+                margin-top: -60px;
+                margin-left: auto;
+                margin-right: auto;
+                h1{
+                    text-align: center;
+                }
+
+                p{
+                    text-align: center;
+                }
+
+                .swiper-pagination{
+                    display: none;
+                }
+            }
+
+            @include d(s){
+                max-width: 325px;
+            }
+
             h1{
                 color: #070C17;
                 font-weight: 400;
@@ -229,16 +258,80 @@
                     top: 25px;
                 }
 
-                &::after{
-                    content: '';
-                    position: absolute;
-                    width: 135px;
-                    height: 100px;
-                    background: url('/assets/img/icons-beneficios/details-feito/circle.svg');
-                    background-repeat: no-repeat;
-                    right: 170px;
-                    bottom: -25px;
+                @include d(t){
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 64px;
+                        height: 64px;
+                        background: url('/assets/img/icons-beneficios/details-feito/traços.svg');
+                        background-repeat: no-repeat;
+                        left: 420px;
+                        top: -30px;
+                    }
                 }
+
+                @include d(s){
+                    &::before{
+                       display: none;
+                    }
+                }
+
+                span{
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 135px;
+                        height: 100px;
+                        background: url('/assets/img/icons-beneficios/details-feito/circle.svg');
+                        background-repeat: no-repeat;
+                        left: 95px;
+                        bottom: -25px;
+                    }
+
+                    @include d(t){
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 135px;
+                            height: 100px;
+                            background: url('/assets/img/icons-beneficios/details-feito/circle.svg');
+                            background-repeat: no-repeat;
+                            left: 205px;
+                            bottom: -25px;
+                        }
+                    }
+
+                    @include d(s){
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 135px;
+                            height: 100px;
+                            background: url('/assets/img/icons-beneficios/details-feito/circle.svg');
+                            background-repeat: no-repeat;
+                            left: 155px;
+                            bottom: -25px;
+                        }
+                    }
+
+                    @include d(ss){
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 135px;
+                            height: 100px;
+                            background: url('/assets/img/icons-beneficios/details-feito/circle.svg');
+                            background-repeat: no-repeat;
+                            left: 135px;
+                            bottom: -25px;
+                        }
+                    }
+                }
+
+               
+                
             }
 
             p{
@@ -246,7 +339,7 @@
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 23px;
-                letter-spacing: -0.02em;
+                letter-spacing: -0.02em; 
                 margin-top: 25px;
                 margin-bottom: 30px;
             }
@@ -261,6 +354,9 @@
             display: flex;
             gap: 30px;
 
+            @include d(s){
+               max-width: 300px;
+            }
             .beneficios-info{
                 background-color: $cor-branco;
                 width: 380px;
