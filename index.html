@@ -211,37 +211,95 @@
                     <h1 data-aos="fade-up" data-aos-delay="1200">Depoimentos</h1>
                 </div>
 
-                <div class="depoimentos-wrapper">
-                    <div class="depoimento">
-                        <div class="depoimento-cliente">
-                            <img class="stars" src="/assets/img/img-depoimentos/stars.svg" alt="">
-
-                            <div class="cliente">
-                                <div class="cliente-img">
-                                    <img src="/assets/img/img-depoimentos/img-depoimento-linda.png" alt="">
+                <div class="depoimentos-wrapper mySwipper3">
+                    <div class="swiper-wrapper">
+                        <div class="depoimento swiper-slide">
+                            <div class="depoimento-cliente">
+                                <img class="stars" src="/assets/img/img-depoimentos/stars.svg" alt="">
+    
+                                <div class="cliente">
+                                    <div class="cliente-img">
+                                        <img src="/assets/img/img-depoimentos/img-depoimento-linda.png" alt="">
+                                    </div>
+                                    <div class="cliente-info">
+                                        <p class="nome-cliente">Linda Fletcher</p>
+                                        <p class="profissao-cliente">Publicitária</p>
+                                    </div>
+                                    
                                 </div>
-                                <div class="cliente-info">
-                                    <p class="nome-cliente">Linda Fletcher</p>
-                                    <p class="profissao-cliente">Publicitária</p>
-                                </div>
-                                
+                            </div>
+    
+                            <div class="depoimento-informacao">
+                                <p>
+                                    “Usar o aplicativo deste time mudou a minha vida! 
+                                    Nunca conseguia ir para a academia e me sentia frustrada ao ver que não estava na minha melhor versão.
+                                     Com o time da Te Desafiei,
+                                     minha vida mudou para melhor! Sou grata.”
+                                </p>
+    
+                                <a href="#"> INSCREVA-SE </a>
                             </div>
                         </div>
 
-                        <div class="depoimento-informacao">
-                            <p>
-                                “Usar o aplicativo deste time mudou a minha vida! 
-                                Nunca conseguia ir para a academia e me sentia frustrada ao ver que não estava na minha melhor versão.
-                                 Com o time da Te Desafiei,
-                                 minha vida mudou para melhor! Sou grata.”
-                            </p>
-
-                            <a href="#"> INSCREVA-SE </a>
+                        <div class="depoimento swiper-slide">
+                            <div class="depoimento-cliente">
+                                <img class="stars" src="/assets/img/img-depoimentos/stars.svg" alt="">
+    
+                                <div class="cliente">
+                                    <div class="cliente-img">
+                                        <img src="/assets/img/img-depoimentos/img-depoimento-linda.png" alt="">
+                                    </div>
+                                    <div class="cliente-info">
+                                        <p class="nome-cliente">Linda Fletcher</p>
+                                        <p class="profissao-cliente">Publicitária</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+    
+                            <div class="depoimento-informacao">
+                                <p>
+                                    “Usar o aplicativo deste time mudou a minha vida! 
+                                    Nunca conseguia ir para a academia e me sentia frustrada ao ver que não estava na minha melhor versão.
+                                     Com o time da Te Desafiei,
+                                     minha vida mudou para melhor! Sou grata.”
+                                </p>
+    
+                                <a href="#"> INSCREVA-SE </a>
+                            </div>
                         </div>
+
+                        <div class="depoimento swiper-slide">
+                            <div class="depoimento-cliente">
+                                <img class="stars" src="/assets/img/img-depoimentos/stars.svg" alt="">
+    
+                                <div class="cliente">
+                                    <div class="cliente-img">
+                                        <img src="/assets/img/img-depoimentos/img-depoimento-linda.png" alt="">
+                                    </div>
+                                    <div class="cliente-info">
+                                        <p class="nome-cliente">Linda Fletcher</p>
+                                        <p class="profissao-cliente">Publicitária</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+    
+                            <div class="depoimento-informacao">
+                                <p>
+                                    “Usar o aplicativo deste time mudou a minha vida! 
+                                    Nunca conseguia ir para a academia e me sentia frustrada ao ver que não estava na minha melhor versão.
+                                     Com o time da Te Desafiei,
+                                     minha vida mudou para melhor! Sou grata.”
+                                </p>
+    
+                                <a href="#"> INSCREVA-SE </a>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
-
-                <img class="img-depoimentos" src="/assets/img/icons-beneficios/beneficios-swapper.svg" alt="">
+                <div class="img-depoimentos swiper-pagination3"></div>
             </div>
         </section>
 
@@ -352,6 +410,15 @@
         clickable: true,
       },
     });
+
+    var swiper = new Swiper(".mySwipper3", {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination3",
+          clickable: true,
+        },
+      });
   </script>
 </body>
 </html>

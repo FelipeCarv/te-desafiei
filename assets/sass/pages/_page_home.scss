@@ -524,6 +524,7 @@
             display: flex;
             position: relative;
             justify-content: center;
+
             .depoimento{
                 display: flex;
                 background: #070C17;
@@ -607,6 +608,11 @@
                     }
     
                 }
+
+            }
+
+            .swiper-slide{
+                width: 80%;
             }
         }
     }
