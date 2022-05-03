@@ -2,6 +2,7 @@
 import Dom from './modules/constructors.js'; //selecionar elementos
 import scriptsHome from './modules/scriptsPaginas/home.js'
 import initCounterUp from './modules/counterUp.js';
+import scriptsLogin from './modules/scriptsPaginas/scriptsLogin.js';
 
 // PAGES 
 const pageHome = new Dom().el("#page__home")
@@ -12,9 +13,19 @@ if (pageHome) { // ★ HOME
     initCounterUp();
 }
 
+const pageLogin = new Dom().el("#page__login")
+
+if (pageLogin) { // ★ LOGIN  
+    new Dom().bodyClass("body__login");
+    scriptsLogin();
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("dcl");
 });
+
+
 
 const btnMobile = document.getElementById('menu-hamburguer');
 
