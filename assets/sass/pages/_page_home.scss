@@ -387,7 +387,6 @@
 
     .aulas{
         margin-top: 160px;
-        position: relative;
         margin-bottom: 160px;
 
         .chamada-aulas{
@@ -403,18 +402,19 @@
                 color: $cor-c8;
                 position: relative;
 
-                &::before{
-                    content: '';
-                    position: absolute;
-                    background: url('/assets/img/img-aulas/details.svg');
-                    background-repeat: no-repeat;
-                    width: 47px;
-                    height: 5px;
-                    top: 20px;
-                    right: 530px;
+                span{
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        background: url('/assets/img/img-aulas/details.svg');
+                        background-repeat: no-repeat;
+                        width: 47px;
+                        height: 5px;
+                        top: 20px;
+                        left: 0px;
+                    }
                 }
-                
-                   
             }
 
             h1{
@@ -424,15 +424,17 @@
                 letter-spacing: -0.02em;
                 color: $cor-primary;
                 margin-bottom: 80px;
+
+                @include d(s){
+                   font-size: 30px;
+                   line-height: 41px;
+                }
             }
         }
-
         .aulas-imagens{
             display: flex;
-            // gap: 30px;
             position: relative;
             z-index: 1;
-
             &::before{
                 content: '';
                 position: absolute;
@@ -450,6 +452,7 @@
             display: flex;
             justify-content: center;
             margin-top: 40px;
+            
         }
 
         &::before{
@@ -458,6 +461,10 @@
             border-bottom: 1px solid $cor-c3;
             bottom: -80px;
             width: 97%;
+        }
+
+        .swiper.mySwipper{
+            min-width: 900px;
         }
        
     }
@@ -489,6 +496,10 @@
                 letter-spacing: -0.02em;
                 color: $cor-primary;
                 margin-bottom: 80px;
+                @include d(s){
+                    font-size: 30px;
+                    line-height: 41px;
+                 }
             }
         }
 
@@ -497,6 +508,12 @@
             align-items: center;
             justify-content: center;
             position: relative;
+
+            @include d(t){
+                display:grid;
+                border-radius: none;
+               align-items: center;
+            }
 
             .plano{
                 display: flex;
@@ -534,6 +551,9 @@
                         bottom: -20px;
                         width: 200%;
                         left: -55px;
+                        @include d(m){
+                            display: none; 
+                        }
                     }
 
                     
@@ -554,6 +574,10 @@
                     font-size: 16px;
                     line-height: 20px;
                     margin: 30px 70px 70px 70px;
+                    @include d(s){
+                        padding: 20px 10px;
+                        font-size: 14px;
+                    }
                 }
 
                 a.mensal{
@@ -600,6 +624,7 @@
             @include d(s){
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                justify-items: center;
             }
 
             .dados{
@@ -676,6 +701,10 @@
                 letter-spacing: -0.02em;
                 color: $cor-primary;
                 margin-bottom: 80px;
+                @include d(s){
+                    font-size: 30px;
+                    line-height: 41px;
+                }
                 
             }
         }
@@ -690,6 +719,13 @@
                 background: #070C17;
                 border-radius: 16px;
                 color: $cor-branco;
+                @include d(mx){
+                    min-width: 700px;
+                }
+
+                @include d(m){
+                    min-width: 920px;
+                }
 
                 .depoimento-cliente{
                     display: flex;
@@ -753,6 +789,10 @@
                         font-size: 20px;
                         line-height: 25px;
                         letter-spacing: -0.02em;
+                        @include d(mx){
+                            margin: 64px 64px 77px 64px;
+                            min-width: 300px;
+                        }
                     }
                     
                     a{
@@ -802,17 +842,22 @@
                 letter-spacing: -0.02em;
                 color: $cor-primary;
                 margin-bottom: 80px;
-                position: relative;
-                &::before{
-                    content: '';
-                    background-image: url('/assets/img/img-baixe/detail-baixe.svg');
-                    background-repeat: no-repeat;
-                    position: absolute;
-                    top: -20px;
-                    width: 157px;
-                    height: 123px;
-                    left: 380px;
-                    
+
+                span{
+                    position: relative;
+                    &::before{
+                        content: '';
+                        background-image: url('/assets/img/img-baixe/detail-baixe.svg');
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        top: -20px;
+                        width: 157px;
+                        height: 123px;
+                        right: -9px;
+                        @include d(s){
+                            display: none;
+                        }
+                    }
                 }
             }
         }
@@ -821,6 +866,12 @@
             display: flex;
             gap: 34px;
             justify-content: center;
+            @include d(s){
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            
+            }
         }
 
         &::before{
@@ -840,6 +891,9 @@
 //============================= NEWSLETTER =============================
 #newsletter{
     .newsletter{
+        @include d(mx){
+         padding-bottom: 40px;           
+        }
         .chamada-newsletter{
            padding-top: 160px;
 
@@ -868,17 +922,24 @@
         .contato-formulario{
             .form{
                 display: flex;
-                justify-content: center;
-                position: relative;
+                border: 1px solid var(--cor-c4);
+                border-radius: 30px;
+                box-sizing: border-box;
+                max-width: fit-content;
+                align-items: center;
+                margin: 0 auto;
+
+               
+                
                 input{
                     width: 590px;
                     height: 60px;
                     background: $cor-c2;
-                    border: 1px solid $cor-c4;
+                    border: none;
                     box-sizing: border-box;
                     border-radius: 30px;
                     padding: 20px;
-                    
+                
                 }
 
                 #email::placeholder{
@@ -900,9 +961,10 @@
                     letter-spacing: -0.02em;
                     color: $cor-c1;
                     padding: 20px;
-                    position: absolute;
-                    left: 698px;
-                    bottom: 5.5px;
+                    margin-right: 5px;
+                    @include d(mm){
+                        line-height: 15px;
+                    }
                 }
             }
         }
@@ -914,6 +976,10 @@
         justify-content: end;
         box-sizing: border-box;
         margin-top: -200px;
+
+        @include d(mx){
+            display: none;
+        }
     }
 }
 
@@ -921,7 +987,6 @@
 #footer{
     .footer{
         color: $cor-branco;
-
         p{
             text-align: center;
             padding-bottom: 64px;
@@ -936,6 +1001,11 @@
             display: flex;
             justify-content: space-between;
 
+            .logo-footer{
+                @include d(t){
+                    display: none;
+                }
+            }
 
             .menus-footer{
                 display: flex;
