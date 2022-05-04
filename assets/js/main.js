@@ -27,6 +27,12 @@ if (pageCadastro) { // ★   CADASTRO
     scriptsCadastro();
 }
 
+const pageIdentificacao = new Dom().el("#page__identificacao")
+
+if (pageIdentificacao) { // ★   IDENTIFICACAO
+    new Dom().bodyClass("body__identificacao");
+    scriptsIdentificacao();
+}
  
 document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("dcl");
