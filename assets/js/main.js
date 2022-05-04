@@ -2,7 +2,7 @@
 import Dom from './modules/constructors.js'; //selecionar elementos
 import scriptsHome from './modules/scriptsPaginas/home.js'
 import initCounterUp from './modules/counterUp.js';
-import scriptsLogin from './modules/scriptsPaginas/scriptsLogin.js';
+import scriptsLogin from './modules/scriptsPaginas/login.js';
 
 // PAGES 
 const pageHome = new Dom().el("#page__home")
@@ -20,7 +20,14 @@ if (pageLogin) { // ★ LOGIN
     scriptsLogin();
 }
 
+const pageCadastro = new Dom().el("#page__cadastro")
 
+if (pageCadastro) { // ★   CADASTRO
+    new Dom().bodyClass("body__cadastro");
+    scriptsCadastro();
+}
+
+ 
 document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("dcl");
 });
@@ -34,4 +41,4 @@ const btnMobile = document.getElementById('menu-hamburguer');
         nav.classList.toggle('active')
     }
 
-    btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('click', toggleMenu);
