@@ -104,7 +104,187 @@
 
 //============================= IDENTIFICACAO ==============================
 
+#identificacao{
+    .identificacao{
+        .identificacao-timeline{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            justify-content: center;
+            margin-top: 80px;
+            margin-bottom: 80px;
 
+
+            .timeline-itens{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                color: $cor-c8;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 150%;
+            }
+
+            .secundaria{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 150%;
+                color: $cor-c6;
+            }
+        }
+
+        .informacoes{
+            display: grid;
+            grid-template-columns: 2fr 8fr;
+            gap: 24px;
+            align-self: flex-start;
+
+            .informacoes-dados{
+                background: #FFFFFF;
+                box-shadow: 0px 4px 12px rgba(43, 48, 60, 0.1);
+                border-radius: 16px;
+                margin-bottom: 80px;
+
+
+                .informacoes-nome{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 24px;
+                    margin-left: 24px;
+                    margin-right: 24px;
+
+                    .nome{
+                        display: flex;
+                        gap: 15px;
+                        align-items: flex-start;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        letter-spacing: -0.02em;
+                        color: $cor-c8;
+
+                        .principal{
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 150%;
+                            color: #343A40;
+                        }
+                        
+                    }
+
+                    a{
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 150%;
+                        color: $cor-primary;
+                    }
+                }
+
+                .form-informacao{
+                    margin-left: 24px;
+                    margin-right: 24px;
+                    margin-bottom: 30px;
+
+                    label{
+                        display: block;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 20px;
+                        letter-spacing: -0.02em;
+                        color: $cor-c8;
+                        margin-top: 30px;
+                        margin-bottom: 10px;
+
+                        span{
+                            color: $cor-primary;
+                            margin-left: 5px;
+                        }
+
+                    }
+
+                    input{
+                        border: 1px solid #DEE2E6;
+                        box-sizing: border-box;
+                        border-radius: 8px;
+                        width: 400px;
+                        padding: 20px;
+                        font-size: 18px;
+                        @include d(s){
+                            font-size: 14px;
+                            width: 300px;
+                 
+                        }
+                    }
+                }
+            }
+
+            .informacoes-plano{
+                background: #FFFFFF;
+                box-shadow: 0px 4px 12px rgba(43, 48, 60, 0.1);
+                border-radius: 16px;
+                align-self: flex-start;
+                margin-bottom: 20px;
+
+                .plano{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 10px 24px -8px 24px;
+
+                    .info-plano{
+                        display: flex;
+                        gap: 10px;
+
+                        h3{
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 150%;
+                            color: #343A40;
+                        }
+                    }
+                }
+
+                a{
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: $cor-primary;
+                }
+
+                .preco{
+                    display: block;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: -0.02em;
+                    color: $cor-primary;
+                    margin-left: 56px;
+                    
+                    span{
+                        font-size: 24px;
+                    }
+                }
+
+                p{
+                    display: block;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: -0.02em;
+                    color: $cor-c8;
+                    margin-left: 56px;
+                    padding-bottom: 11px;
+                }
+            }
+
+            .informacoes-organizacao{
+                a{
+                    
+                }
+            }
+        }
+    }
+}
 
 //============================= FOOTER =============================
 #footer{
