@@ -3,6 +3,7 @@ import Dom from './modules/constructors.js'; //selecionar elementos
 import scriptsHome from './modules/scriptsPaginas/home.js'
 import initCounterUp from './modules/counterUp.js';
 import scriptsLogin from './modules/scriptsPaginas/login.js';
+import scriptsIdentificacao from './modules/scriptsPaginas/identificacao.js';
 
 // PAGES 
 const pageHome = new Dom().el("#page__home")

@@ -144,7 +144,7 @@
                 box-shadow: 0px 4px 12px rgba(43, 48, 60, 0.1);
                 border-radius: 16px;
                 margin-bottom: 80px;
-
+                align-self: flex-start;
 
                 .informacoes-nome{
                     display: flex;
@@ -207,6 +207,7 @@
                         box-sizing: border-box;
                         border-radius: 8px;
                         width: 400px;
+                        color: $cor-c8;
                         padding: 20px;
                         font-size: 18px;
                         @include d(s){
@@ -214,6 +215,32 @@
                             width: 300px;
                  
                         }
+                    }
+
+                    select{
+                        appearance: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        border: 1px solid #DEE2E6;
+                        box-sizing: border-box;
+                        border-radius: 8px;
+                        width: 400px;
+                        padding: 20px;
+                        font-size: 18px;
+                        color: $cor-c8;
+                        @include d(s){
+                            font-size: 14px;
+                            width: 300px;
+                 
+                        }
+
+                        
+                    }
+
+                    #sexo{
+                        background: url(/assets/img/icons-identificacao/arrow-down.svg) no-repeat center right 5%;
+                        background-size: 15px;
+
                     }
                 }
             }
@@ -242,6 +269,87 @@
                             color: #343A40;
                         }
                     }
+                }
+
+                #info-dados{
+                    display: block;
+                }
+                
+                #info-dados.destroir{
+                    display: none;
+                }
+
+                .pagamento-metodo{
+                    display: none;
+
+                    .bandeiras-cartao{
+                        display: flex;
+                        gap: 10px;
+                        margin-left: 56px;
+                        margin-bottom: 24px;
+                    } 
+
+                    .form-informacao{
+                        margin-left: 24px;
+                        margin-right: 24px;
+                        margin-bottom: 30px;
+    
+                        label{
+                            display: block;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            letter-spacing: -0.02em;
+                            color: $cor-c8;
+                            margin-top: 30px;
+                            margin-bottom: 10px;
+    
+                            span{
+                                color: $cor-primary;
+                                margin-left: 5px;
+                            }
+    
+                        }
+    
+                        input{
+                            border: 1px solid #DEE2E6;
+                            box-sizing: border-box;
+                            border-radius: 8px;
+                            width: 100%;
+                            color: $cor-c8;
+                            padding: 20px;
+                            font-size: 18px;
+                            @include d(s){
+                                font-size: 14px;
+                                width: 300px;
+                     
+                            }
+                        }
+                    }
+
+                    .cvc-validade{
+                        display: flex;
+                        justify-content: space-between;
+
+                        label{
+                            margin-top: 0;
+                        }
+
+                       
+                    }
+                }
+                
+                .pagamento-metodo.active{
+                    display: block;
+                }
+                #termos{
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $cor-c10;
+                    letter-spacing: -0.02em;
+                    margin-left: 24px;
+                    padding-bottom: 47px;
                 }
 
                 a{
@@ -275,10 +383,12 @@
                     margin-left: 56px;
                     padding-bottom: 11px;
                 }
+
+              
             }
 
             .informacoes-organizacao{
-                .button-next{
+                #button-next{
                     display: flex;
                     justify-content: flex-end;
                     
@@ -292,6 +402,7 @@
                     font-weight: 700;
                     font-size: 16px;
                     line-height: 20px;
+                    margin-bottom: 94px;
                    }
                     
                 }
