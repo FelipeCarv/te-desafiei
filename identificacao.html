@@ -46,8 +46,8 @@
                     <img src="./assets/img/icons-identificacao/seta.svg" alt="">
 
                     <div class="timeline-itens">
-                        <img src="/assets/img/icons-identificacao/dollar-sign.svg" alt="">
-                        <span class="secundaria">Pagamento</span>
+                        <img id="dollar" src="/assets/img/icons-identificacao/dollar-sign.svg" alt="">
+                        <span id="pagamento-secundaria" class="secundaria">Pagamento</span>
                     </div>
 
                     <img src="./assets/img/icons-identificacao/seta.svg" alt="">
@@ -69,7 +69,7 @@
                                 </div>
                             </div>
                             
-                            <a href="#">Editar</a>
+                            <a href="/cadastro.html">Editar</a>
                         </div>
 
                         <div class="form-informacao">
@@ -152,7 +152,7 @@
                             </div>
                         </div>
                         <div id="button-next">
-                            <a class="button-next" href="#">Continuar</a>
+                            <a class="button-next" onclick="alterarImg();" href="#">Continuar</a>
                         </div>                        
                     </div>
                    
@@ -239,6 +239,10 @@
         $(this).text("FINALIZAR COMPRA");
         });
 
+        function alterarImg(){
+            document.getElementById('dollar').src='../assets/img/icons-identificacao/dollar-sign(active).png';
+            document.getElementById('pagamento-secundaria').style.color='#495057';
+        }
 
     </script>
 </body>

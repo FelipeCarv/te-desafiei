@@ -5,16 +5,16 @@ export default function scriptsIdentificacao (){
     const btn = document.getElementById('button-next');
 
     function toggleMenu(){
-        const teste = document.getElementById('pagamento');
+        const teste = document.getElementById('pagamento');        
         const dados = document.getElementById('info-dados');
 
-        teste.classList.toggle('active');
-        dados.classList.toggle('destroir');
-        
-
+        teste.classList.toggle('active'); //mostrando a parte de preenchimento
+        dados.classList.toggle('destroir'); //sumindo com o letreiro "Aguardando preenchimento de dados".
     }
 
     btn.addEventListener('click', toggleMenu);
+
+
 
 
 //================ MODAL ================
@@ -31,3 +31,7 @@ export default function scriptsIdentificacao (){
         modal.classList.remove('mostrar');
     });
 }
+
+
+
+
