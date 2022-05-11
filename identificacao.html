@@ -152,7 +152,7 @@
                             </div>
                         </div>
                         <div id="button-next">
-                            <a href="#">Continuar</a>
+                            <a class="button-next" href="#">Continuar</a>
                         </div>                        
                     </div>
                    
@@ -200,7 +200,44 @@
                 <p>&copy; 2021 - Te Desafiei - Todos os direitos reservados.</p>
             </div>
         </section>
+
+            <div id="modal-planos" class="modal-container">
+                <div class="modal">
+                    <div class="modal-chamada">
+                        <div class="modal-chamada-info">
+                            <img src="/assets/img/icons-identificacao/notebook.svg" alt="">
+                            <p>Alterar plano mensal</p>
+                        </div>
+                        <!-- <a href="">X</a> -->
+                    </div>
+
+                    <div class="planos">
+                        <div class="planos-info">
+                            <h3>Plano Mensal</h3>
+                            <p>$<span>22</span>/mês</p>
+                        </div>
+
+                        <a href="">ESCOLHER</a>
+                    </div>
+
+                    <div class="planos anual">
+                        <div class="planos-info">
+                            <h3>Plano Anual</h3>
+                            <p>$<span>22</span>/mês</p>
+                        </div>
+
+                        <a href="">ESCOLHER</a>
+                    </div>
+                </div>
+            </div>
     </main>
     <script type="module" src="./assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(".button-next").click(function(e){
+        $(this).text("FINALIZAR COMPRA");
+        });
+    </script>
 </body>
 </html>

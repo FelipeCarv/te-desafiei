@@ -1,0 +1,84 @@
+.modal-container{
+    width: 100vw;
+    background-color: black;
+    opacity: .9;
+
+    .modal{
+        background: #FFFFFF;
+        border-radius: 8px;
+        max-width: 450px;
+        padding-bottom: 8px;
+        .modal-chamada{
+            display: flex;
+            align-items: center;
+            margin-left: 12px;
+            padding-top: 10px;
+            margin-bottom: 32px;
+            p{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 150%;
+                color: black;
+            }
+            
+            .modal-chamada-info{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+
+        .planos{
+            background: $cor-c2;
+            border: 1px solid #F1F3F5;
+            border-radius: 8px;
+            margin-left: 16px;
+            margin-right: 16px;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            .planos-info{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h3{
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 25px;
+                    color: #1D222E;
+                    box-sizing: border-box;
+                    margin-top: 12px;
+                    margin-left: 16px;
+                }
+
+                p{
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #070C17;
+                    box-sizing: border-box;
+                    margin-bottom: 10px;
+                    margin-left: 16px;
+                    
+                    span{
+                        font-size: 28px;
+                    }
+                }
+            }
+
+            a{
+                padding: 15px 30px;
+                background-color: $cor-primary;
+                border-radius: 27px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                color: #070C17;
+                margin-right: 10px;
+            }
+        }
+    }
+}
