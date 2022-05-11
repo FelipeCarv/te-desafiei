@@ -16,4 +16,18 @@ export default function scriptsIdentificacao (){
 
     btn.addEventListener('click', toggleMenu);
 
+
+//================ MODAL ================
+    const btnAlterar = document.getElementById('alterar');
+    const btnFechar = document.getElementById('fechar')
+
+    btnAlterar.addEventListener('click', ()=>{
+        const modal = document.getElementById('modal-planos');
+        modal.classList.add('mostrar');
+    });
+
+    btnFechar.addEventListener('click', ()=>{
+        const modal = document.getElementById('modal-planos');
+        modal.classList.remove('mostrar');
+    });
 }
