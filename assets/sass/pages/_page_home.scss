@@ -693,6 +693,14 @@
     .depoimentos{
         padding-top: 80px;
 
+        .swiper-slide{
+            transform: scale(0.9);
+            transition: transform 0.3s ease-in;
+          }
+              .swiper-slide-active{
+                  transform: scale(1);
+      
+              }
         .img-depoimentos{
             padding-top: 40px;
             padding-bottom: 160px;
@@ -736,13 +744,12 @@
                 background: #070C17;
                 border-radius: 16px;
                 color: $cor-branco;
-                @include d(mx){
-                    min-width: 700px;
-                }
 
                 @include d(m){
-                    min-width: 920px;
+                   flex-direction: column;
                 }
+
+               
 
                 .depoimento-cliente{
                     display: flex;
@@ -808,7 +815,7 @@
                         letter-spacing: -0.02em;
                         @include d(mx){
                             margin: 64px 64px 77px 64px;
-                            min-width: 300px;
+                            // min-width: 300px;
                         }
                     }
                     
