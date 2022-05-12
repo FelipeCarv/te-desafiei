@@ -714,9 +714,11 @@
         .img-depoimentos{
             padding-top: 40px;
             padding-bottom: 160px;
-            display: block;
+            display: flex;
             margin: 0 auto;
+            justify-content: center;
         }
+        
         .depoimentos-chamada{
             text-align: center;
 
