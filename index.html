@@ -76,8 +76,9 @@
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
+
                 <div class="swiper mySwiper">
-                    <div data-aos="fade-left"  data-aos-delay="1000" class="beneficios-informacoes swiper-wrapper">
+                    <div class="beneficios-informacoes swiper-wrapper">
                         <div class="beneficios-info swiper-slide">
                             <img src="/assets/img/icons-beneficios/heart-benefic.svg" alt="">
                             <h3>Condicionamento físico</h3>
@@ -399,15 +400,16 @@
     </script>
 
 <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: "auto",
+    const swiper1 = new Swiper(".mySwiper", {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
     });
 
-    var swiper = new Swiper(".mySwipper", {
+    const swiper2 = new Swiper(".mySwipper", {
       slidesPerView: "4",
       spaceBetween: 5,
       pagination: {
@@ -416,7 +418,7 @@
       },
     });
 
-    var swiper = new Swiper(".mySwipper3", {
+    const swiper3 = new Swiper(".mySwipper3", {
         slidesPerView: 'auto',
         spaceBetween: 20,
         pagination: {

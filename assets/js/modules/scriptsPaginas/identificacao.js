@@ -8,7 +8,7 @@ export default function scriptsIdentificacao (){
         const teste = document.getElementById('pagamento');        
         const dados = document.getElementById('info-dados');
 
-        teste.classList.toggle('active'); //mostrando a parte de preenchimento
+        teste.classList.add('active'); //mostrando a parte de preenchimento
         dados.classList.toggle('destroir'); //sumindo com o letreiro "Aguardando preenchimento de dados".
     }
 
