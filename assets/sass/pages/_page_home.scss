@@ -224,6 +224,10 @@
             position: relative;
             z-index: 3;
             padding: 3rem 0;
+
+            .swiper-pagination-clickable .swiper-pagination-bullet {
+                background-color: $cor-primary;
+            }
              
             &::before{
                 content: '';
@@ -465,6 +469,10 @@
             }
         }
 
+        .swiper-pagination-clickable .swiper-pagination-bullet {
+            background-color: $cor-primary;
+        }
+        
         .img-swapper-aulas{
             display: flex;
             justify-content: center;
@@ -692,7 +700,9 @@
 #depoimentos{
     .depoimentos{
         padding-top: 80px;
-
+        .swiper-pagination-clickable .swiper-pagination-bullet {
+            background-color: $cor-primary;
+        }
         .swiper-slide{
             transform: scale(0.9);
             transition: transform 0.3s ease-in;
