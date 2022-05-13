@@ -4,6 +4,8 @@ import scriptsHome from './modules/scriptsPaginas/home.js'
 import initCounterUp from './modules/counterUp.js';
 import scriptsLogin from './modules/scriptsPaginas/login.js';
 import scriptsIdentificacao from './modules/scriptsPaginas/identificacao.js';
+import scriptsObrigado from './modules/scriptsPaginas/obrigado.js';
+import scriptsDetalhes from './modules/scriptsPaginas/detalhes.js';
 
 // PAGES 
 const pageHome = new Dom().el("#page__home")
@@ -21,6 +23,8 @@ if (pageLogin) { // ★ LOGIN
     scriptsLogin();
 }
 
+
+
 const pageCadastro = new Dom().el("#page__cadastro")
 
 if (pageCadastro) { // ★   CADASTRO
@@ -28,13 +32,35 @@ if (pageCadastro) { // ★   CADASTRO
     scriptsCadastro();
 }
 
+
+
 const pageIdentificacao = new Dom().el("#page__identificacao")
 
 if (pageIdentificacao) { // ★   IDENTIFICACAO
     new Dom().bodyClass("body__identificacao");
     scriptsIdentificacao();
 }
+
+
+
+const pageObrigado = new Dom().el("#page__obrigado")
+
+if (pageObrigado) { // ★   OBRIGADO
+    new Dom().bodyClass("body__obrigado");
+    scriptsObrigado();
+}
  
+
+
+const pageDetalhes = new Dom().el("#page__detalhes")
+
+if (pageDetalhes) { // ★   OBRIGADO
+    new Dom().bodyClass("body__detalhes");
+    scriptsDetalhes();
+}
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("dcl");
 });

@@ -1,0 +1,435 @@
+.intro-bg{
+    background-color: $cor-c11;
+}
+
+.introducao-bg{
+    background-color: $cor-c11;
+    box-shadow: inset 0 -80px #FCFCFC;
+}
+
+.login-bg{
+    background-color: #FCFCFC;
+}
+
+.footer-bg{
+    background: #070C17;
+}
+
+#menu-hamburguer{
+    display: none;
+}
+
+//============================= HEADER =============================
+#header{
+    .header{
+        display: flex;
+        align-items: center;
+        gap: 240px;
+        position: relative;
+
+        @include d(mx){
+            gap: 120px;
+        }
+
+        @include d(mm){
+            justify-content: space-between;
+            padding: 20px;
+            #menu-hamburguer{
+                display: block;
+            }
+            #menu{
+                display: none;
+            }
+            .menu-mobile{
+                display: none;
+            } 
+        }
+
+        .menu-mobile.active{
+            display: block;
+            position: absolute;
+            width: 45vw;
+            top: 75px;
+            z-index: 3;
+            right: 0;
+            background-color: $cor-c11;
+            height: calc(100vh - 70px);
+
+            #menu{
+                display: block;
+            }
+        }
+    }
+    
+  
+
+    #menu{
+        display: flex;
+        
+      li{
+        color: $cor-branco;
+        padding: 40px 30px;
+        font-size: 14px;
+        @include d(mx){
+            padding: 40px 20px;
+        }
+
+        @include d(mm){
+            padding: 20px 10px;
+        }
+      }
+    
+      a{
+          position: relative;
+          color: $cor-branco;
+          font-weight: 400;
+
+          &::after{
+            content: " ";
+            display: block;
+            height: 1px;
+            width: 0%;
+            background-color: $cor-primary;
+            margin-top: 4px;
+            position: absolute;
+          }
+          &:hover::after{
+            width: 100%;
+            transition: 0.3s;
+        }
+       }    
+       
+    }
+}
+
+//============================= OBRIGADO ==============================
+
+#obrigado{
+    .obrigado{
+        .obrigado-timeline{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            justify-content: center;
+            margin-top: 80px;
+            margin-bottom: 80px;
+
+
+            .timeline-itens{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                color: $cor-c8;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 150%;
+            }
+
+            .secundaria{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 150%;
+                color: $cor-c6;
+            }
+        }
+
+        .obrigado{
+            display: block;
+            grid-template-columns: 2fr 8fr;
+            gap: 24px;
+            align-self: flex-start;
+
+            .obrigado-cliente{
+                background: #FFFFFF;
+                box-shadow: 0px 4px 12px rgba(43, 48, 60, 0.1);
+                border-radius: 16px;
+                align-self: flex-start;
+                margin-bottom: 20px;
+
+                .obrigado-mensagem{
+                   padding: 24px;
+                    h3{
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 30px;
+                        letter-spacing: -0.02em;
+                        color: $cor-c9;
+                        margin-bottom: 8px;
+                        margin-top: 0px;
+                    }
+
+                    p{
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        letter-spacing: -0.02em;
+                        color: $cor-c7;
+                    }
+                }
+                
+            }
+            .obrigado-plano{
+                background: #FFFFFF;
+                box-shadow: 0px 4px 12px rgba(43, 48, 60, 0.1);
+                border-radius: 16px;
+                align-self: flex-start;
+                margin-bottom: 80px;
+
+                .obrigado-plano-info1{
+                    padding-top: 26px;
+                    margin-left: 26px;
+
+                    h3{
+                        font-weight: 700;
+                        font-size: 40px;
+                        line-height: 51px;
+                        letter-spacing: -0.02em;
+                        color: $cor-c9;
+                        margin: 0;
+                    }
+                    
+                    p{
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 25px;
+                        letter-spacing: -0.02em;
+                        color: $cor-c7;
+                        margin-top: 8px;
+                    }
+                }
+               
+                .obrigado-plano-info2{
+                    margin-top: 26px;
+                    margin-left: 26px;
+                    padding-bottom: 32px;
+
+                    p{
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 20px;
+                        letter-spacing: -0.02em;
+                        color: $cor-c7;
+                    }
+                    .renovacao{
+                        display: flex;
+                        gap: 10px;
+                        margin-bottom: 12px;
+
+                       
+                    }
+
+                    .cartao{
+                        display: flex;
+                        gap: 10px;
+                       align-items: center;
+
+                        p{
+                            display: flex;
+                            align-items: center;
+                            font-weight: 500;
+
+                            span{
+                                content: '';
+                                display: inline-block;
+                                width: 8px;
+                                height: 8px;
+                                background-color: $cor-primary;
+                                border-radius: 50%;
+                                margin: 0px 12px;
+                            }
+
+                            
+                        }
+                        .uso{
+                            display: inline-block;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 20px;
+                            letter-spacing: -0.02em;
+                            color: $cor-c9;
+                            background: none;
+                        }
+                    }
+                }
+            }
+
+            .obrigado-organizacao{
+                #button-next{
+                    display: flex;
+                    justify-content: flex-end;
+                    
+                   a{
+                    background: #293142;
+                    color: $cor-branco;
+                    text-transform: uppercase;
+                    text-align: center;
+                    padding: 14px 30px;
+                    border-radius: 27px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-bottom: 94px;
+                   }
+                    
+                }
+            }
+        }
+    }
+}
+
+//============================= vAMOS JUNTOS ==============================
+#vamos-juntos{
+    .vamos-juntos{
+        background: url('/assets/img/img-obrigado/obrigado-bg.png') no-repeat center;
+        box-shadow: inset 0 -80px #fcfcfc;
+
+        .vamos-juntos-chamada{
+            padding-top: 80px;
+            margin-bottom: 80px;
+            p{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+                color: $cor-c8;
+                text-align: center;
+                letter-spacing: -0.02em;
+            }
+
+            h1{
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 61px;
+                color: $cor-primary;
+                text-align: center;
+                letter-spacing: -0.02em;
+
+            }
+        }
+
+        .swiper-pagination-clickable .swiper-pagination-bullet {
+            background-color: $cor-primary;
+        }
+        .swiper-slide{
+            transform: scale(0.9);
+            transition: transform 0.3s ease-in;
+        }
+        .swiper-slide-active{
+            transform: scale(1.3);
+            z-index: 3;
+        }
+
+        .obrigado-wrapper{
+            display: flex;
+            position: relative;
+            justify-content: center;
+            margin-bottom: 120px;
+           
+            .swiper-wrapper{
+                display: flex;
+                align-items: center;
+                gap: 30px;
+            }
+
+            .swiper-slide{
+                display: flex;
+                width: 80%;
+            }
+        }
+    }
+}
+
+//============================= FOOTER =============================
+#footer{
+    .footer{
+        color: $cor-branco;
+        p{
+            text-align: center;
+            padding-bottom: 64px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: -0.02em;
+        }
+
+        .menus{
+            padding-top: 64px;
+            display: flex;
+            justify-content: space-between;
+
+            .logo-footer{
+                @include d(t){
+                    display: none;
+                }
+            }
+
+            .menus-footer{
+                display: flex;
+                gap: 70px;
+
+                .menu{
+                    margin-bottom: 64px;
+
+                    h2{
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 30px;
+                        letter-spacing: -0.02em;
+                        color: $cor-primary;
+                        margin-bottom: 24px;
+                    }
+
+                    ul{
+                        li{
+                            margin-bottom: 16px;
+                            a{
+                                color: $cor-branco;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 20px;
+                                letter-spacing: -0.02em;
+                            }
+                            
+                        }
+                    }
+                }
+
+                .outros{
+
+                    h2{
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 30px;
+                        letter-spacing: -0.02em;
+                        color: $cor-primary;
+                        margin-bottom: 24px;
+                    }
+
+                    ul{
+                        
+                        li{
+                            margin-bottom: 16px;
+                            a{
+                                color: $cor-branco;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 20px;
+                                letter-spacing: -0.02em;
+                            }
+                            
+                        }
+                    }
+
+                    .menus-icones{
+                        ul{
+                            display: flex;
+                            gap: 5px;
+                        }
+                    }
+                }
+               
+            }
+        }
+
+        
+    }
+}
