@@ -1,4 +1,4 @@
-.modal-container.mostrar{
+.modal-container.mostrar, #modal-cancelar.mostrar, #modal-cancelado.mostrar{
     display: flex;
 }
 
@@ -99,5 +99,173 @@
                 margin-right: 10px;
             }
         }
+    }
+}
+
+
+// CANCELAR
+#modal-cancelar{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 50;
+    justify-content: center;
+    align-items: center;
+
+    .modal{
+        background: #FFFFFF;
+        border-radius: 16px;
+        min-width: 450px;
+        padding-bottom: 8px;
+
+        .modal-chamada{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-left: 32px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+          
+            p{
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 150%;
+                color: $cor-c8;
+                
+            }
+
+            img{
+                margin-right: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .info-cancelamento{
+            max-width: 420px;
+            margin-bottom: 24px;
+            margin-left: 32px;
+            margin-right: 32px;
+
+            h1{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 150%;
+                color: $cor-c10;
+                margin-bottom: 8px;
+            }
+
+            p{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+                color: $cor-c8;
+            }
+        }
+
+        .info-cancelamento-2{
+            border-top: 1px solid rgba(233, 236, 239, 1);
+            max-width: 420px;
+            padding-top: 24px;
+            margin-left: 32px;
+            margin-right: 32px;
+            p{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+                color: $cor-c8;
+                span{
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .botoes-cancelamento{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 24px;
+            margin-bottom: 20px;
+
+            a{
+                padding: 15px 30px;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: -0.02em;
+               
+            }
+
+            #btnCancelar{
+                background: #293142;
+                border-radius: 27px;
+                color: $cor-branco;
+            }
+
+            #quero-cancelar{
+                background: #FF8D00;
+                border-radius: 27px;
+                color: #070C17;
+            }
+        }
+    }
+}
+
+
+// CANCELAR
+#modal-cancelado{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 50;
+    justify-content: center;
+    align-items: center;
+
+    .modal{
+        background: #FFFFFF;
+        border-radius: 16px;
+        min-width: 450px;
+        padding-bottom: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+       h1{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 150%;
+            color: $cor-c10;
+            margin-top: 40px;
+            margin-bottom: 8px;
+            text-align: center;
+       }
+
+       .info-cancelado{
+            border-top: 1px solid rgba(233, 236, 239, 1);
+            max-width: 420px;
+            margin-bottom: 40px;
+            p{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+                text-align: center;
+                color: $cor-c8;
+                padding-top: 8px;
+                
+                span{
+                    font-weight: 700;
+                }
+            }
+       }
+
     }
 }

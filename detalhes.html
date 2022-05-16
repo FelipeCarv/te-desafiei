@@ -48,8 +48,8 @@
                         </div>
                    </div>
                    <div class="acoes">
-                       <a class="alterar" href="">Alterar Plano</a>
-                       <a class="cancelar" href="">Cancelar Plano</a>
+                       <a id="alterar" href="">Alterar Plano</a>
+                       <a id="cancelar" href="">Cancelar Plano</a>
                    </div>
                </div>
 
@@ -102,6 +102,7 @@
             </div>
         </section>
 
+
         <section id="footer" class="footer-bg">
             <div class="footer container">
                 <div class="menus">
@@ -142,6 +143,71 @@
                 <p>&copy; 2021 - Te Desafiei - Todos os direitos reservados.</p>
             </div>
         </section>
+
+        <div id="modal-planos" class="modal-container">
+            <div class="modal">
+                <div class="modal-chamada">
+                    <div class="modal-chamada-info">
+                        <img src="/assets/img/icons-identificacao/notebook.svg" alt="">
+                        <p>Alterar plano mensal</p>
+                    </div>
+                    <img id="fechar" src="/assets/img/icons-identificacao/fechar.svg" alt="">
+                </div>
+
+                <div class="planos">
+                    <div class="planos-info">
+                        <h3>Plano Mensal</h3>
+                        <p>$<span>22</span>/mês</p>
+                    </div>
+
+                    <a href="">ESCOLHER</a>
+                </div>
+
+                <div class="planos anual">
+                    <div class="planos-info">
+                        <h3>Plano Anual</h3>
+                        <p>$<span>22</span>/mês</p>
+                    </div>
+
+                    <a href="">ESCOLHER</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-cancelar" class="modal-container">
+            <div class="modal">
+                <div class="modal-chamada">
+                    <img id="voltar-cancelar" src="/assets/img/img-detalhes/arrow-detalhes.svg" alt="">
+                    <p>Voltar para o Te Desafiei</p>                 
+                </div>
+
+                <div class="info-cancelamento">
+                    <h1>É fácil cancelar o seu plano</h1>
+                    <p>Obrigado pelo tempo que você permaneceu por aqui. Saiba que estaremos sempre de braços abertos  para você. Conclua o cancelamento abaixo.</p>
+                </div>
+
+                <div class="info-cancelamento-2">
+                    <p>O cancelamento passa a vigorar ao fim deste ciclo de cobrança: <span>20 de maio de 2022</span></p>
+                </div>
+
+                <div class="botoes-cancelamento">
+                    <a id="btnCancelar" href="">Cancelar</a>
+                    <a id="quero-cancelar" href="">Quero Cancelar</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="modal-cancelado" class="modal-container">
+            <div class="modal">
+                <h1>O seu plano foi cancelado</h1>
+
+                <div class="info-cancelado">
+                    <p>O cancelamento passa a vigorar ao fim deste ciclo de cobrança: <span>20 de maio de 2022</span></p>
+                </div>
+            </div>
+        </div>
+
     </main>
     <script type="module" src="./assets/js/main.js"></script>
 </body>

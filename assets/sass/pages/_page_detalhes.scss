@@ -108,6 +108,7 @@
 
     .detalhes{
         margin-bottom: 80px;
+        
         h2{
             font-weight: 600;
             font-size: 24px;
@@ -173,7 +174,7 @@
                     font-weight: 700;
                 }
 
-                .alterar{
+                #alterar{ 
                     background: #293142;
                     border-radius: 27px;
                     color: $cor-c1;
@@ -181,7 +182,7 @@
                     margin-bottom: 10px;
                 }
 
-                .cancelar{
+                #cancelar{
                     color: #070C17;
                     border: 1px solid rgba(206, 212, 218, 1);
                     border-radius: 27px;
