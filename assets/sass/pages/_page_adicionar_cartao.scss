@@ -1,0 +1,364 @@
+.intro-bg{
+    background-color: $cor-c11;
+}
+
+.introducao-bg{
+    background-color: $cor-c11;
+    box-shadow: inset 0 -80px #FCFCFC;
+}
+
+.login-bg{
+    background-color: #FCFCFC;
+}
+
+.footer-bg{
+    background: #070C17;
+}
+
+#menu-hamburguer{
+    display: none;
+}
+
+//============================= HEADER =============================
+#header{
+    .header{
+        display: flex;
+        align-items: center;
+        gap: 240px;
+        position: relative;
+
+        @include d(mx){
+            gap: 120px;
+        }
+
+        @include d(mm){
+            justify-content: space-between;
+            padding: 20px;
+            #menu-hamburguer{
+                display: block;
+            }
+            #menu{
+                display: none;
+            }
+            .menu-mobile{
+                display: none;
+            } 
+        }
+
+        .menu-mobile.active{
+            display: block;
+            position: absolute;
+            width: 45vw;
+            top: 75px;
+            z-index: 3;
+            right: 0;
+            background-color: $cor-c11;
+            height: calc(100vh - 70px);
+
+            #menu{
+                display: block;
+            }
+        }
+    }
+    
+  
+
+    #menu{
+        display: flex;
+        
+      li{
+        color: $cor-branco;
+        padding: 40px 30px;
+        font-size: 14px;
+        @include d(mx){
+            padding: 40px 20px;
+        }
+
+        @include d(mm){
+            padding: 20px 10px;
+        }
+      }
+    
+      a{
+          position: relative;
+          color: $cor-branco;
+          font-weight: 400;
+
+          &::after{
+            content: " ";
+            display: block;
+            height: 1px;
+            width: 0%;
+            background-color: $cor-primary;
+            margin-top: 4px;
+            position: absolute;
+          }
+          &:hover::after{
+            width: 100%;
+            transition: 0.3s;
+        }
+       }    
+       
+    }
+}
+
+//============================= CADASTRO ==============================
+
+#adicionar-cartao{
+    .adicionar-cartao{
+
+        .informacoes{
+            display: block;
+            gap: 24px;
+            align-self: flex-start;
+            margin-top: 80px;
+
+            .informacoes-plano{
+                background: #FFFFFF;
+                box-shadow: 0px 4px 12px rgba(43, 48, 60, 0.1);
+                border-radius: 16px;
+                align-self: flex-start;
+                margin-bottom: 20px;
+                
+                .plano{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-left: 27px;
+
+                    h3{
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 150%;
+                        color: #343A40;
+                    }
+                }
+                .pagamento-metodo{
+                    display:block;
+
+                    .bandeiras-cartao{
+                        display: flex;
+                        gap: 15px;
+                        margin-left: 56px;
+                        margin-bottom: 24px;
+                    } 
+
+                    .form-informacao{
+                        margin-left: 24px;
+                        margin-right: 24px;
+                        margin-bottom: 30px;
+    
+                        label{
+                            display: block;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            letter-spacing: -0.02em;
+                            color: $cor-c8;
+                            margin-top: 30px;
+                            margin-bottom: 10px;
+    
+                            span{
+                                color: $cor-primary;
+                                margin-left: 5px;
+                            }
+    
+                        }
+    
+                        input{
+                            border: 1px solid #DEE2E6;
+                            box-sizing: border-box;
+                            border-radius: 8px;
+                            width: 100%;
+                            color: $cor-c8;
+                            padding: 20px;
+                            font-size: 18px;
+                            @include d(s){
+                                font-size: 14px;
+                                width: 300px;
+                     
+                            }
+                        }
+                    }
+
+                    .cvc-validade{
+                        display: flex;
+                        justify-content: space-between;
+
+                        label{
+                            margin-top: 0;
+                        }
+
+                       
+                    }
+                }
+                
+                .pagamento-metodo.active{
+                    display: block;
+                }
+                #termos{
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $cor-c10;
+                    letter-spacing: -0.02em;
+                    margin-left: 24px;
+                    padding-bottom: 47px;
+                }
+
+                a{
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: $cor-primary;
+                }
+
+                .preco{
+                    display: block;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: -0.02em;
+                    color: $cor-primary;
+                    margin-left: 56px;
+                    
+                    span{
+                        font-size: 24px;
+                    }
+                }
+
+                p{
+                    display: block;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: -0.02em;
+                    color: $cor-c8;
+                    margin-left: 56px;
+                    padding-bottom: 11px;
+                }
+
+              
+            }
+
+            .informacoes-organizacao{
+                #button-next{
+                    display: flex;
+                    justify-content: flex-end;
+                    
+                   a{
+                    background: #293142;
+                    color: $cor-branco;
+                    text-transform: uppercase;
+                    text-align: center;
+                    padding: 14px 30px;
+                    border-radius: 27px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-bottom: 94px;
+                   }
+                    
+                }
+            }
+        }
+    }
+}
+
+
+
+//============================= FOOTER =============================
+#footer{
+    .footer{
+        color: $cor-branco;
+        p{
+            text-align: center;
+            padding-bottom: 64px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: -0.02em;
+        }
+
+        .menus{
+            padding-top: 64px;
+            display: flex;
+            justify-content: space-between;
+
+            .logo-footer{
+                @include d(t){
+                    display: none;
+                }
+            }
+
+            .menus-footer{
+                display: flex;
+                gap: 70px;
+
+                .menu{
+                    margin-bottom: 64px;
+
+                    h2{
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 30px;
+                        letter-spacing: -0.02em;
+                        color: $cor-primary;
+                        margin-bottom: 24px;
+                    }
+
+                    ul{
+                        li{
+                            margin-bottom: 16px;
+                            a{
+                                color: $cor-branco;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 20px;
+                                letter-spacing: -0.02em;
+                            }
+                            
+                        }
+                    }
+                }
+
+                .outros{
+
+                    h2{
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 30px;
+                        letter-spacing: -0.02em;
+                        color: $cor-primary;
+                        margin-bottom: 24px;
+                    }
+
+                    ul{
+                        
+                        li{
+                            margin-bottom: 16px;
+                            a{
+                                color: $cor-branco;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 20px;
+                                letter-spacing: -0.02em;
+                            }
+                            
+                        }
+                    }
+
+                    .menus-icones{
+                        ul{
+                            display: flex;
+                            gap: 5px;
+                        }
+                    }
+                }
+               
+            }
+        }
+
+        
+    }
+}

@@ -45,10 +45,9 @@ export default function scriptsDetalhes(){
     const btnCancelado = document.getElementById('quero-cancelar');
 
     btnCancelado.addEventListener('click', (e)=>{
-        
         const modal = document.getElementById('modal-cancelado');
         modal.classList.add('mostrar');
-        
+        e.preventDefault();
     });
-    e.preventDefault();
+    
 }

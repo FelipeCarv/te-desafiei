@@ -59,6 +59,13 @@ if (pageDetalhes) { // ★   OBRIGADO
     scriptsDetalhes();
 }
 
+const pageAdicionarCartao = new Dom().el("#page__adicionar_cartao")
+
+if (pageAdicionarCartao) { // ★   OBRIGADO
+    new Dom().bodyClass("body__adicionar_cartao");
+    scriptsAdicionarCartao();
+}
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
