@@ -114,6 +114,11 @@
             margin-top: 80px;
             margin-bottom: 80px;
 
+            .arrow-timeline{
+                @include d(t){
+                    display: none;
+                }
+            }
 
             .timeline-itens{
                 display: flex;
@@ -123,6 +128,15 @@
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 150%;
+                @include d(t){
+                    display: none;
+                }
+            }
+
+            .timeline-itens.principal{
+                @include d(t){
+                    display: flex;
+                };
             }
 
             .secundaria{
@@ -138,6 +152,10 @@
             grid-template-columns: 2fr 8fr;
             gap: 24px;
             align-self: flex-start;
+
+            @include d(t){
+                grid-template-columns: 1fr
+            }
 
             .informacoes-dados{
                 background: #FFFFFF;
@@ -210,6 +228,9 @@
                         color: $cor-c8;
                         padding: 20px;
                         font-size: 18px;
+                        @include d(t){
+                            width: 100%;
+                        }
                         @include d(s){
                             font-size: 14px;
                             width: 300px;
@@ -331,11 +352,14 @@
                         display: flex;
                         justify-content: space-between;
 
+                        @include d(s){
+                            flex-direction: column;
+                        }
+
                         label{
                             margin-top: 0;
                         }
-
-                       
+ 
                     }
                 }
                 
@@ -391,7 +415,9 @@
                 #button-next{
                     display: flex;
                     justify-content: flex-end;
-                    
+                    @include d(t){
+                       justify-content: center;
+                    }
                    a{
                     background: #293142;
                     color: $cor-branco;

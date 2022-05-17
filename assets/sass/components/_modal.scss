@@ -20,6 +20,10 @@
         min-width: 450px;
         padding-bottom: 8px;
 
+        @include d(t){
+            min-width: 320px;
+        }
+
         .modal-chamada{
             display: flex;
             align-items: center;
@@ -217,7 +221,7 @@
 }
 
 
-// CANCELAR
+// CANCELADO
 #modal-cancelado{
     display: none;
     width: 100vw;

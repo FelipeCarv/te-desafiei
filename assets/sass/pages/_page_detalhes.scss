@@ -102,7 +102,7 @@
     }
 }
 
-//============================= OBRIGADO ===========================
+//============================= DETALHES ===========================
 #detalhes{
     margin-top: 80px;
 
@@ -123,6 +123,17 @@
             justify-content: space-between;
             border-top: 1px solid rgba(233, 236, 239, 1);
             margin-bottom: 66px;
+
+            @include d(t){
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            @include d(s){
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
 
             .detalhes-plano-info{
                 h1{
@@ -149,7 +160,11 @@
                     gap: 10px;
                     align-items: center;
                     margin-top: 10px;
-
+                    @include d(s){
+                        img{
+                            display: none;
+                        }
+                    }
                     p{
                         font-weight: 600;
                         font-size: 16px;
