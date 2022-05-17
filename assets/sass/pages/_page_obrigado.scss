@@ -113,7 +113,11 @@
             justify-content: center;
             margin-top: 80px;
             margin-bottom: 80px;
-
+            @include d(s){
+                .remover-img{
+                    display: none;
+                }
+            }
 
             .timeline-itens{
                 display: flex;
@@ -123,8 +127,14 @@
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 150%;
+                @include d(s){
+                    display: none;
+                }
+                
             }
-
+            .principal{
+                display: flex;
+            }
             .secundaria{
                 font-weight: 500;
                 font-size: 18px;
@@ -145,6 +155,9 @@
                 border-radius: 16px;
                 align-self: flex-start;
                 margin-bottom: 20px;
+                @include d(s){
+                    text-align: center;
+                }
 
                 .obrigado-mensagem{
                    padding: 24px;
@@ -174,10 +187,17 @@
                 border-radius: 16px;
                 align-self: flex-start;
                 margin-bottom: 80px;
+                @include d(s){
+                    text-align: center;
+                    img{
+                        display: none;
+                    }
+                }
 
                 .obrigado-plano-info1{
                     padding-top: 26px;
                     margin-left: 26px;
+                   
 
                     h3{
                         font-weight: 700;
@@ -202,6 +222,10 @@
                     margin-top: 26px;
                     margin-left: 26px;
                     padding-bottom: 32px;
+                    @include d(s){
+                        
+                        text-align: center;
+                    }
 
                     p{
                         font-weight: 600;
@@ -222,6 +246,9 @@
                         display: flex;
                         gap: 10px;
                        align-items: center;
+                       @include d(s){
+                            display: none;
+                        }
 
                         p{
                             display: flex;
