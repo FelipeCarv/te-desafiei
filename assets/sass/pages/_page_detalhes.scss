@@ -221,6 +221,9 @@
                     align-items: center;
                     font-weight: 500;
                     color: $cor-c7;
+                    @include d(s){
+                        font-size: 11px;
+                    }
 
                     span{
                         content: '';

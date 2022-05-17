@@ -20,7 +20,7 @@
         min-width: 450px;
         padding-bottom: 8px;
 
-        @include d(t){
+        @include d(s){
             min-width: 320px;
         }
 
@@ -126,6 +126,10 @@
         min-width: 450px;
         padding-bottom: 8px;
 
+        @include d(s){
+            min-width: 320px;
+        }
+
         .modal-chamada{
             display: flex;
             align-items: center;
@@ -194,6 +198,9 @@
             gap: 10px;
             margin-top: 24px;
             margin-bottom: 20px;
+            @include d(s){
+                flex-direction: column;
+            }
 
             a{
                 padding: 15px 30px;
@@ -242,6 +249,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include d(s){
+            min-width: 320px;
+        }
 
        h1{
             font-weight: 700;
