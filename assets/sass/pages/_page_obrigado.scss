@@ -329,6 +329,9 @@
                 color: $cor-primary;
                 text-align: center;
                 letter-spacing: -0.02em;
+                @include d(s){
+                    font-size: 40px;
+                }
 
             }
         }
@@ -343,6 +346,12 @@
         .swiper-slide-active{
             transform: scale(1.3);
             z-index: 3;
+            @include d(t){
+                transform: scale(2.3);
+            }
+            @include d(s){
+                transform: scale(3.3);
+            }
         }
 
         .obrigado-wrapper{
